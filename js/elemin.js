@@ -10,10 +10,10 @@ var app = angular.module('eleminApp', [
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when("/", {templateUrl: "partials/dashboard.html", controller: "PageController"})
-        .when("/dashboard", {templateUrl: "partials/dashboard.html", controller: "PageController"})
-				.when("/blank", {templateUrl: "partials/blank.html", controller: "PageController"})	
+        .when("/dashboard", {templateUrl: "partials/dashboard.html", controller: "DashboardController"})
+		.when("/blank", {templateUrl: "partials/blank.html", controller: "PageController"})	
         .when("/forms", {templateUrl: "partials/forms.html", controller: "PageController"})
-				.when("/elements", {templateUrl: "partials/elements.html", controller: "PageController"})	
+		.when("/elements", {templateUrl: "partials/elements.html", controller: "PageController"})	
         .otherwise("/404", {templateUrl: "partials/404.html"});
 }]);
 
@@ -67,4 +67,46 @@ app.controller('NavigationController', function($scope, $location) {
 });
 app.controller('PageController', function ( $scope, $location, $http, $controller ) {
 	
+});
+
+app.controller('DashboardController', function ( $scope, $location, $http, $controller ) {
+    $scope.load = function() {
+       var options = {
+            segmentShowStroke : true,
+            segmentStrokeColor : "#fff",
+            segmentStrokeWidth : 2,
+            percentageInnerCutout : 50, 
+            animationSteps : 100,
+            animationEasing : "easeOutBounce",
+            animateRotate : true,
+            animateScale : false,
+            legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+        }
+
+        var data = [
+            {
+                value: 300,
+                color:"#F7464A",
+                highlight: "#FF5A5E",
+                label: "Red"
+            },
+            {
+                value: 50,
+                color: "#46BFBD",
+                highlight: "#5AD3D1",
+                label: "Green"
+            },
+            {
+                value: 100,
+                color: "#FDB45C",
+                highlight: "#FFC870",
+                label: "Yellow"
+            }
+        ];
+
+        var myDoughnutChart = new Chart($('#doughnut').get(0).getContext("2d")).Doughnut(data,options);
+   };
+
+   //don't forget to call the load function
+   $scope.load();
 });
