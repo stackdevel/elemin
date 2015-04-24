@@ -1,5 +1,4 @@
-# elemin
-Elemin - Elegant and Minimal Backend Template
+# Elemin - Elegant and Minimal Backend Template
 
 Free Admin Template created by stackdevel. 
 It is headed for web developers who want an easy and beautiful start in their projects. 
