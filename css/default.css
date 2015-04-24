@@ -1,0 +1,27 @@
+.clear,
+.clearfix {
+	display:block;
+	clear:both;
+}
+.pull-left {
+	float:left;
+}
+.pull-center {
+	display:block!important;
+	margin:auto!important;
+}
+.pull-right {
+	float:right;
+}
+.text-left {
+	text-align:left;
+}
+.text-center {
+	text-align:center;
+}
+.text-right {
+	text-align:right;
+}
+.width-one-half {
+	width:50%;
+}

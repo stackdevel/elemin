@@ -1,0 +1,53 @@
+<!doctype html>
+<html ng-app="eleminApp">
+  <head ng-controller="MetaController">
+		<title>Elemin Application</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body class="wrap">
+		<div class="navigation" ng-controller="NavigationController">
+			<a class="logo" href="#"><i class="pe-7s-science"></i></a>
+			<a href="#dashboard" ng-class="menuClass('dashboard')">Dashboard</a>
+			<a href="#blank" ng-class="menuClass('blank')">Blank Page</a>
+			<a href="#forms" ng-class="menuClass('forms')">Forms</a>
+			<a href="#elements" ng-class="menuClass('elements')">Elements</a>
+			<div class="user">
+				<a href="#user" class="avatar"><span>Leonardo</span><i class="pe-7s-user"></i></a>
+				<ul class="dropdown">
+					<li>
+						<a href="#">
+							<i class="pe-7s-check success"></i> Your profile was reviewed <span>12:15 AM</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="pe-7s-angle-right"></i> Office published a new article <span>1 day ago</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="pe-7s-chat"></i> Office initiated a new conversation <span>3 days ago</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div class="content">
+			<div ng-view></div>
+		</div>
+		
+		
+		<div class="footer text-center">
+			<p>Elemin template, created and designed by <a href="http://stackdevel.com" target="_blank">stackdevel.com</a>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+    <script src="js/elemin.js"></script>
+  </body>
+</html>
