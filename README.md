@@ -1,4 +1,4 @@
-# Elemin - Elegant and Minimal Backend Template
+# Elegant and Minimal Backend Template
 
 Free Admin Template created by stackdevel. 
 It is headed for web developers who want an easy and beautiful start in their projects. 
@@ -9,29 +9,29 @@ It consists the minimum stylesheets and javascripts.
 Also it is based on the AngularJs.
 
 <h3>Components</h3>
-- Grid system
+- Grid system<br>
 Url: http://getskeleton.com/
-
-Example:
-<div class="row">
-  <div class="one column">One</div>
-  <div class="two columns">Two</div>
-  <div class="three columns">Three</div>
-  <div class="four columns">Four</div>
-</div>
-
-
-- Fonts
+<br>
+Example:<br>
+&lt;div class="row"&gt;<br>
+  &lt;div class="one column"&gt;One&lt;/div&gt;<br>
+  &lt;div class="two columns"&gt;Two&lt;/div&gt;<br>
+  &lt;div class="three columns"&gt;Three&lt;/div&gt;<br>
+  &lt;div class="four columns"&gt;Four&lt;/div&gt;<br>
+&lt;/div&gt;
+<br>
+<br>
+- Fonts<br>
 Url: http://themes-pixeden.com/font-demos/7-stroke/
-
-Example:
-<i class="pe-7s-wine"></i>
-<i class="pe-7s-id"></i>
-<i class="pe-7s-smile"></i>
-<i class="pe-7s-users"></i>
-
-
-- Javascript Libraries
-Url: https://jquery.com/
-Url: http://www.chartjs.org/
-Url: https://angularjs.org/
+<br>
+Example:<br>
+&lt;i class="pe-7s-wine"&gt;&lt;/i&gt;<br>
+&lt;i class="pe-7s-id"&gt;&lt;/i&gt;<br>
+&lt;i class="pe-7s-smile"&gt;&lt;/i&gt;<br>
+&lt;i class="pe-7s-users"&gt;&lt;/i&gt;<br>
+<br>
+<br>
+- Javascript Libraries<br>
+Url: https://jquery.com/<br>
+Url: http://www.chartjs.org/<br>
+Url: https://angularjs.org/<br>
