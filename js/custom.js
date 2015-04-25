@@ -53,7 +53,7 @@ Chart.defaults.global = {
     scaleFontColor: "#5A616D",
 
     // Boolean - whether or not the chart should be responsive and resize when the browser does.
-    // responsive: true,
+    responsive: true,
 
     // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
     maintainAspectRatio: true,
