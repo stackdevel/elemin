@@ -10,8 +10,8 @@ Also it is based on the AngularJs.
 <br>
 <br>
 <h3>Screenshots</h3>
-![alt tag](https://raw.github.com/stackdevel/elemin/master/img/elemin.preview.1.png)<br>
-![alt tag](https://raw.github.com/stackdevel/elemin/master/img/elemin.preview.2.png)<br>
+![alt tag](https://raw.github.com/stackdevel/elemin/master/img/elemin.preview.1.png)<hr><br>
+![alt tag](https://raw.github.com/stackdevel/elemin/master/img/elemin.preview.2.png)<hr><br>
 ![alt tag](https://raw.github.com/stackdevel/elemin/master/img/elemin.preview.3.png)<br>
 
 <h3>Components</h3>
