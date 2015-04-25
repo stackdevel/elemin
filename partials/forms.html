@@ -1,33 +1,47 @@
-<h1 class="text-center">Elemin Forms Headline</h1>
+<h1>Elemin Forms Headline</h1>
 
-<form class="width-one-half pull-center">
-	<div class="row">
-		<label>First Name: </label>
-		<input type="text">
+<div class="row">
+	<form class="six columns">
+		<div class="row">
+			<label>First Name: </label>
+			<input type="text">
+		</div>
+		<div class="row">
+			<label>Last Name: </label>
+			<input type="text">
+		</div>
+		<div class="row">
+			<label>Email* : </label>
+			<input required type="email">
+		</div>
+		<div class="row">
+			<label>Telephone: </label>
+			<input type="email">
+		</div>
+		<div class="row">
+			<label>Gender: </label>
+			<select>
+				<option>Please select your gender</option>
+				<option>Male</option>
+				<option>Female</option>
+			</select>
+		</div>
+		<div class="row">
+			<label>Avatar: </label>
+			<input type="file">
+		</div>
+		<input type="submit" class="btn" value="Save changes">
+	</form>
+
+	<div class="six columns">
+		<h3>
+				Showcase and guide users with a <br>
+				better User Interface & Experience.
+		</h3>
+		<p>
+			Forms are one of the most important components 
+			when it comes to a dashboard. Recognizing that fact, users are 
+			able work in a maximum content width.
+		</p>
 	</div>
-	<div class="row">
-		<label>Last Name: </label>
-		<input type="text">
-	</div>
-	<div class="row">
-		<label>Email* : </label>
-		<input required type="email">
-	</div>
-	<div class="row">
-		<label>Telephone: </label>
-		<input type="email">
-	</div>
-	<div class="row">
-		<label>Gender: </label>
-		<select>
-			<option>Please select your gender</option>
-			<option>Male</option>
-			<option>Female</option>
-		</select>
-	</div>
-	<div class="row">
-		<label>Avatar: </label>
-		<input type="file">
-	</div>
-	<input type="submit" class="btn pull-center" value="Save changes">
-</form>
+</div>

@@ -1,9 +1,119 @@
 <h1>Elemin Dashboard Headline</h1>
+<br>
+<h3>Visitors this week</h3>
+<canvas height='300' id='canvas' width='800'></canvas>
+<code>
+	&lt;canvas height='300' id='canvas' width='800'&gt;&lt;/canvas&gt;
+	
+	&lt;script&gt;
+		var data = {
+		  labels : ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+		  datasets : [
+		    {
+		      fillColor : "#f4a827",
+		      pointColor : "#fff",
+		      pointStrokeColor : "#f4a827",
+		      data : [100,250,350,50,700,500,400]
+		    },
+		  ]
+		}
 
-<canvas id="doughnut" width="200" height="200"></canvas>
-
-<script>
-
-
-
-</script>
+		new Chart(document.getElementById("canvas").getContext("2d")).Line(data)
+		&lt;/script&gt;
+</code>
+<br><br>
+<h3>Today statistics</h3>
+<div class="blocks">
+	<a class="text-purple" href="#"><i class="pe-7s-users"></i> 25 users</a>
+	<a class="text-green" href="#"><i class="pe-7s-piggy"></i> +130$</a>
+	<a class="text-red" href="#"><i class="pe-7s-ticket"></i> 12 tickets</a>
+</div>
+<code>
+	&lt;div class="blocks"&gt;
+		&nbsp;&nbsp;&lt;a class="text-purple" href="#"&gt;&lt;i class="pe-7s-users"&gt;&lt;/i&gt; 25 users&lt;/a&gt;
+		&nbsp;&nbsp;&lt;a class="text-green" href="#"&gt;&lt;i class="pe-7s-piggy"&gt;&lt;/i&gt; +130$&lt;/a&gt;
+		&nbsp;&nbsp;&lt;a class="text-red" href="#"&gt;&lt;i class="pe-7s-ticket"&gt;&lt;/i&gt; 12 tickets&lt;/a&gt;
+	&lt;/div&gt;
+</code>
+<br><br>
+<h3>Today registered</h3>
+<a href="#elements" class="btn pull-right"><i class="pe-7s-add-user"></i> add user</a>
+<table>
+	<thead>
+		<tr>
+			<th>id</th>
+			<th>first name</th>
+			<th>last name</th>
+			<th>email</th>
+			<th>status</th>
+			<th>actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>35</td>
+			<td>Leonardo</td>
+			<td>Smith</td>
+			<td>s.leonardo@gmail.com</td>
+			<td class="text-green">active</td>
+			<td><a class="btn background-blue small" href="#elements"><i class="pe-7s-pen"></i> edit</a>
+		</tr>
+		<tr>
+			<td>57</td>
+			<td>Megan</td>
+			<td>Doe</td>
+			<td>megand@gmail.com</td>
+			<td class="text-yellow">waiting for confirmation</td>
+			<td><a class="btn background-blue small" href="#elements"><i class="pe-7s-pen"></i> edit</a>
+		</tr>
+		<tr>
+			<td>121</td>
+			<td>Chris</td>
+			<td>Finch</td>
+			<td>chris.finch@gmail.com</td>
+			<td class="text-green">active</td>
+			<td><a class="btn background-blue small" href="#elements"><i class="pe-7s-pen"></i> edit</a>
+		</tr>
+	</tbody>
+</table>
+<code>
+	&lt;a href="#elements" class="btn pull-right"&gt;&lt;i class="pe-7s-add-user"&gt;&lt;/i&gt; add user&lt;/a&gt;
+	&lt;table&gt;
+		&nbsp;&nbsp;&lt;thead&gt;
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;id&lt;/th&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;first name&lt;/th&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;last name&lt;/th&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;email&lt;/th&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;status&lt;/th&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;actions&lt;/th&gt;
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+		&nbsp;&nbsp;&lt;/thead&gt;
+		&nbsp;&nbsp;&lt;tbody&gt;
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;35&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Leonardo&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Smith&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;s.leonardo@gmail.com&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="text-green"&gt;active&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a class="btn background-blue small" href="#elements"&gt;&lt;i class="pe-7s-pen"&gt;&lt;/i&gt; edit&lt;/a&gt;
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;57&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Megan&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;megand@gmail.com&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="text-yellow"&gt;waiting for confirmation&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a class="btn background-blue small" href="#elements"&gt;&lt;i class="pe-7s-pen"&gt;&lt;/i&gt; edit&lt;/a&gt;
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;121&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Chris&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Finch&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;chris.finch@gmail.com&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="text-green"&gt;active&lt;/td&gt;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a class="btn background-blue small" href="#elements"&gt;&lt;i class="pe-7s-pen"&gt;&lt;/i&gt; edit&lt;/a&gt;
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+		&nbsp;&nbsp;&lt;/tbody&gt;
+	&lt;/table&gt;
+</code>
